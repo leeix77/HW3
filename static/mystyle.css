@@ -1,0 +1,27 @@
+ a {
+    font-size:24px;
+    color:olive; 
+    font-style: oblique;
+  }
+  
+  h1 {
+    color:tomato;
+    font-style: italic;
+  }
+
+  i {
+    font-size:36px;
+    color:orange;
+  }
+
+  label {
+    font-size:24px;
+    color:teal; 
+    font-style: oblique;
+  }
+
+  p {
+    font-size:24px;
+    color:red; 
+    font-style: oblique;
+  }

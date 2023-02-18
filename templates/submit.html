@@ -1,19 +1,20 @@
+<link rel="stylesheet" type="text/css" href= {{ url_for("static",filename="mystyle.css") }} >
 {% block header %}
-  <h1 style="color:tomato;font-style: italic;">{% block title %}A Simple Message Bank{% endblock %}</h1>
+  <h1>{% block title %}A Simple Message Bank{% endblock %}</h1>
 {% endblock %}
 
 {% block content %}
-    <li><a style="font-size:24px;color:olive; font-style: oblique;" href="/submit"> Submit a message</a></li>
-    <li><a style="font-size:24px;color:olive; font-style: oblique;" href="/view"> View messages</a></li>
-    
-  <i style="font-size:36px;color:orange;">Submit</i>
+    <li><a href="/submit"> Submit a message</a></li>
+    <li><a href="/view"> View messages</a></li>
+
+  <i>Submit</i>
 
   <form method="post">
-      <label style="font-size:24px;color:teal; font-style: oblique;" for="message">Your message:</label>
+      <label for="message">Your message:</label>
       <br>
       <input name="message" id="message">
       <br>
-      <label style="font-size:24px;color:teal; font-style: oblique;" for="handle">Your name or handle:</label>
+      <label for="handle">Your name or handle:</label>
       <br>
       <input name="handle" id="handle">
       <br>

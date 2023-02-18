@@ -1,18 +1,18 @@
+<link rel="stylesheet" type="text/css" href= {{ url_for("static",filename="mystyle.css") }} >
 {% block header %}
-  <h1 style="color:tomato;font-style: italic;">{% block title %}A Simple Message Bank{% endblock %}</h1>
+  <h1>{% block title %}A Simple Message Bank{% endblock %}</h1>
 {% endblock %}
 
 {% block content %}
-    <li><a style="font-size:24px;color:olive; font-style: oblique;" href="/submit"> Submit a message</a></li>
-    <li><a style="font-size:24px;color:olive; font-style: oblique;" href="/view"> View messages</a></li>
+    <li><a href="/submit"> Submit a message</a></li>
+    <li><a href="/view"> View messages</a></li>
 
-  <i style="font-size:36px;color:orange;">Some Cool Messages</i>
+  <i>Some Cool Messages</i>
   <br>
 
 {% for key,value in msg.iterrows() %}
-    <i style="font-size:24px;color:rosybrown; font-style: oblique;">{{value['handle']}}:</i>
-    <br>
-    &nbsp;&nbsp; <i style="font-size:24px;color:salmon; font-style: oblique;">{{value['message']}}</i>
+    <p>{{value['handle']}}:</p>
+    <p>{{value['message']}}</p>
     <br>
 {% endfor %}
       
